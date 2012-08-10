@@ -33,6 +33,7 @@ class URLpy():
             print er
         except KeyboardInterrupt:
             print '\n[x] Download canceled by user.'
+        raise urllib.ContentTooShortError('testeando....')
 
     def progress(self, numBlock, blockSize, totalSize):
         """
